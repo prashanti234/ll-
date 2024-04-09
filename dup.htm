@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="shortcut icon" type="x-icon" a href="logo.png"><title> Our Branches</title>
+<style>
+    body{
+        background-color: black;
+        background-image: url(pppp.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+     
+    }
+    h1{
+        text-align: center;
+        font-size: 4cap;
+        text-decoration-color: rgb(206, 203, 4);
+    }
+    p{
+        text-align: center;
+    }
+    .div6{
+        float:left;
+        font-size: 3cap;
+    }
+    button:hover{
+            background-color: #a2dc0d;
+            transition-delay: 0s;
+            animation-duration: 0s;
+            scale: 1.2;
+        }
+        a{
+            text-decoration: none;
+        }
+    
+        button{
+           
+            border-color: #f7f310;
+            border-radius: 3cap;
+            size: 3cap;
+            width: 20cap;
+            background: transparent;
+            text-decoration-color: #e6e607;
+           color: #000000;
+           background-color: #a2dc0d;
+            
+          height: 39px;
+          scroll-behavior: smooth;
+          text-shadow: #a5e10d;
+        text-overflow: ellipsis;
+        direction: rtl;
+        } 
+    h{
+        font-size: 6cap;
+        color: #000000;
+        
+        border-radius: 2cap;
+        border: #000000;
+    }
+    .popuptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  color: #15ff00;
+ 
+}
+
+
+.popuptext:after {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 5px;
+  border-width: 5px;
+  border-style: dotted;
+  
+  
+ 
+}
+
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  
+}
+
+</style></head><body>
+    <h text="black"><b>LEKHNATH RESTAURANT</b></h>
+<h1> <p><b><font color="blue" font sixe="4cap"> Our services are available in :</font>
+     <br>
+<font color="black">Kathmandu<br>
+biratnagar<br>dharan<br>chipledunga<br>lekhnath<br>
+tanahun<br>Jaimure<br>Rolpa<br>kailali<br>Achhaam</font></b></p></h1>
+<div class="div6">
+    <a href="index.html"><button class="home">HOME</button></a>
+    <a href="Menu.html"><button>MENU</button></a>
+    <a href="Order now.html"><button>Go TO ORDER PAGE</button></a>
+    <a href="chief.html"><button>CHEF</button></a>
+
+
+</div>
+<button id="submit"><div class="popup" onclick="myFunction()" text size="2cap"> <B>ORDER</B>
+    <span class="popuptext" id="myPopup"><B>SUCCESSFULLY ORDERED</B></span>
+  </div></a></button>
+
+</button>
+</form>
+
+<script>
+function myFunction()
+{
+var popup = document.getElementById("myPopup");
+popup.classList.toggle("show");
+}
+</script>
+</body>

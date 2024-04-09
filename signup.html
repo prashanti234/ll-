@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+    
+    <link rel="shortcut icon" type="x-icon" a href="logo.png">
+    <style>
+        h1 {
+            font-size: 3em;
+            text-align: center;
+        }
+
+        .div1 {
+            font-size: 2em;
+            float: inherit;
+        }
+
+        body {
+            background: rgba(0, 0, 0, 0.7) url('food.jpg') center center fixed;
+    background-size: cover;
+    background-blend-mode:darken;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration-color: black;
+    background-image: url(hotel.jpeg);
+    color:antiquewhite
+        }
+        h2 {
+            font-size: 3.24cap;
+            text-align: center;
+        }
+
+        p {
+            font-size: 2em;
+        }
+
+        h3 {
+            font-size: 2em;
+            text-align: center;
+            justify-content: center;
+        }
+        .container{
+            max-width: 100px;
+            width:100% ;
+           justify-content: center;
+            align-items: center;
+           
+            font-size: 2cap;
+
+
+        }
+       
+    
+       
+        input{
+            border-radius: 5px;
+            height: 30px;
+            background-color:  wheat;
+            text-decoration-color: aqua;
+            font-size: o.9cap;
+            color: #000000;
+            width: 55cap;
+        }
+        ::placeholder{
+            text-align: center;
+            forced-color-adjust: dark;
+            text-decoration-color: rgb(200, 120, 83);
+            font-size: 2cap;
+           
+        }
+        button:hover{
+            background-color: #a2dc0d;
+            transition-delay: 0s;
+            animation-duration: 0s;
+            scale: 1.2;
+            color:#000000
+        }
+        a{
+            text-decoration: none;
+        
+        }
+    
+        button{
+           
+            border-color: #f7f310;
+            border-radius: 3cap;
+            size: 3cap;
+            width: 20cap;
+            background: transparent;
+            color:#ff5500;
+           background: transparent;
+            
+          height: 39px;
+          scroll-behavior: smooth;
+          text-shadow: #a5e10d;
+        text-overflow: ellipsis;
+        direction: rtl;
+        }
+        
+
+
+
+.popuptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  color: #15ff00;
+ 
+}
+
+
+.popuptext:after {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 5px;
+  border-width: 5px;
+  border-style: dotted;
+  
+  
+ 
+}
+
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  
+}
+a{
+    text-decoration: none;
+}
+h{
+    color: #ff8c00;
+    font-size: 4cap;
+}
+h6{
+    font-size: 1cap;
+}
+a{
+    color: none;
+}
+.popuptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  color: #15ff00;
+ 
+}
+
+
+.popuptext:after {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 5px;
+  border-width: 5px;
+  border-style: dotted;
+  
+  
+ 
+}
+
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  
+}
+h7{
+    text-align: center;
+}
+ </style>
+</head>
+<body>
+    <h>LEKHNATH RESTAURANT</h>
+    
+    <h1>Fill your details and sign up<br></h1>
+    
+    
+    
+  <h3>
+    <form id="mForm" method="POST">
+    
+                                     NAME<BR>
+        <input type="text" id="name" name="name"  placeholder="Your Name:" size="50" required>
+        <br>
+       GENDER<BR>
+        <input type="text" id="gender" name="gender" placeholder="Gender:" required>
+        <br>
+
+        ADDRESS<BR>
+        <input type="text" id="address" name="address" placeholder="Address:" required><br>
+
+       PROVINCE<BR>
+        <input type="text" id="province" name="province" placeholder="Province:" required>
+        <br>
+       EMAIL<br><input type="email" id="email" name="email" placeholder="Email:" required><br>
+                    
+    PHONE <br><input type="number" id="phone" name="phone" placeholder="Phone:" required>
+                    <br>
+                   PASSWORD: <br><input type="password" id="password" name="password" placeholder="Password:" required>
+                    <br><br>
+
+
+
+                    <button id="submit"><div class="popup" onclick="myFunction()" text size="2cap"> <B>SIGN UP</B>
+                        <span class="popuptext" id="myPopup"><B>SUCCESSFULLY SIGNED UP:go to login</B></span>
+                      </div></a></button>
+                   
+                   
+                </form><a href="hello.htm" text align="center"><button>LOGIN</button></a></h3>
+                
+        
+       
+      
+  
+        
+   
+   
+    
+</button>
+<script>
+    function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+   
+     
+     document.getElementById('mForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Fetch the form data
+            var formData = new FormData(e.target);
+            const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwXKTXHsUNJmqEXPiYWdsTd0TcK3TgLGB_PXhVHR_Uj3MPeK7XFTD1uSG2lZLM7Tj_ddg/exec"
+            // Send the data to the Google Apps Script
+           fetch(SCRIPT_URL,{
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.text())
+            .then(data => {
+
+
+                
+                console.log(data);
+                // Handle success or error
+            })
+            .catch(error => {
+                console.error('Error:', error);alert("SUCCESSFULLY ORDERED")
+            });
+        });
+       
+
+
+
+
+       
+        
+
+
+
+
+
+        
+
+
+    
+
+        
+    </script>
+    
+</body>
+</html>
